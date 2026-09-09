@@ -159,8 +159,27 @@ refatoração.
 - Doadoras (`shiftAssistant/biblioteca-generalista/`, `.../biblioteca-plantao-pa-flat/`)
   intocadas e somente-leitura.
 
-🔴 PENDÊNCIA CLÍNICA (herdada da Fase 1): revisão médica dos blocos 9 (🏨 ENFERMARIA) e
-10 (⚖️ DIVERGÊNCIAS) das 4 protocolos de psiquiatria — conteúdo gerado, não portado.
+✅ REVISÃO CLÍNICA COMPLETA (09/2026): blocos 9 (🏨 ENFERMARIA) e 10 (⚖️ DIVERGÊNCIAS) das 4 protocolos de psiquiatria aprovados pelo usuário.
 
 ---
-**Revisado em 08/2026 · Revisar até 08/2027**
+**Revisado em 08/2026 · Revisão clínica completa em 09/2026 · Revisar até 08/2027**
+
+## ESTADO FINAL (2026-09-09)
+
+**Biblioteca pronta para produção.** Todas as fases 0–5 completas:
+- ✅ Espinha fixada (biblioteca-generalista)
+- ✅ Psiquiatria portada e reformatada (4 protocolos)
+- ✅ BIC-nativa por construção
+- ✅ Regressão de fatos verificada
+- ✅ Consistência de links e rodapés confirmada
+- ✅ Revisão clínica de psiquiatria completa
+
+**Onde está:**
+- Local: `Assistente de Plantão/biblioteca-plantao/` (82 protocolos)
+- Backup cloud: https://github.com/lucasodn3466/assistente-de-plantao (GitHub, 2026-09-09)
+- Acesso móvel: configurado para Git client (GitJournal / Working Copy)
+
+**Próximas etapas (usuário decide):**
+- Começar a usar em shift managers (biblioteca está pronta)
+- Fase 3: instanciar perfis de locais usando `locais/_MODELO/00-perfil.md`
+- Identidade: renomear/versionar conforme desejado
