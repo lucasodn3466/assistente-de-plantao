@@ -1,6 +1,6 @@
 # 🏥 ÍNDICE GERAL — BIBLIOTECA GENERALISTA DE PLANTÃO
 
-**Versão 1.0 · Agosto de 2026 · 82 arquivos**
+**Versão 2.0 · Setembro de 2026 · 82 arquivos**
 📖 Filosofia, avisos e como usar: [LEIA PRIMEIRO](00-LEIA-PRIMEIRO.md) · Criar novo arquivo: [Templates](99-TEMPLATES.md)
 
 ---

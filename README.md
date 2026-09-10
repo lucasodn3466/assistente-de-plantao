@@ -19,7 +19,7 @@ Biblioteca clínica de apoio à decisão para o médico generalista de plantão 
 
 ## Estado
 
-**Versão 1.0 · Revisado em 08/2026 · Revisar até 08/2027**
+**Versão 2.0 · Revisado em 08/2026 · Revisar até 08/2027**
 Biblioteca pronta para uso. Camada local (`locais/`) ainda não instanciada.
 O que vem a seguir está em [`PLANOS-FUTUROS.md`](biblioteca-plantao/PLANOS-FUTUROS.md).
 

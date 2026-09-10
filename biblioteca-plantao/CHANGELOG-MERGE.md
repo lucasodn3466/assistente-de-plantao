@@ -143,8 +143,8 @@ refatoração.
 - `08-dermatologia__02` — `[FATO-08]` (ver Fase 4).
 
 **Decisões adiadas (não bloqueiam a entrega):**
-- Identidade da biblioteca: título ainda diz "BIBLIOTECA GENERALISTA DE PLANTÃO" / "Versão 1.0".
-  Renomear para "BIBLIOTECA DE PLANTÃO" e/ou bumpar versão é decisão do usuário.
+- Identidade da biblioteca: título ainda diz "BIBLIOTECA GENERALISTA DE PLANTÃO".
+  Renomear para "BIBLIOTECA DE PLANTÃO" é decisão do usuário. (Versão bumpada para 2.0 em 09/2026.)
 - `99-TEMPLATES.md`: acrescentar um Esqueleto D (camada local) e a convenção de nome
   `<serviço>__<protocolo>.md` — melhor fazer quando a Fase 3 for instanciada.
 - Índices por seção (`NN-area__00-indice.md`, estilo do doador) — não adotados; o índice
@@ -161,8 +161,19 @@ refatoração.
 
 ✅ REVISÃO CLÍNICA COMPLETA (09/2026): blocos 9 (🏨 ENFERMARIA) e 10 (⚖️ DIVERGÊNCIAS) das 4 protocolos de psiquiatria aprovados pelo usuário.
 
+## v2.0 — reestruturação em pastas (10/09/2026)
+
+- Biblioteca passou de flat para **um nível de pastas** (25 pastas). Nome do arquivo:
+  `<código>__<NN>-<tema>.md` (esquema D). 82 arquivos movidos com `git mv`; 1231 links
+  relativos reescritos e verificados.
+- Movimentações de seção: psiquiatria 05→10, acidentes peçonhentos absorvidos em
+  `01g-toxicologia/`, crise falcêmica 09→`01j`, ATB empírico 14→`05`, abstinência 05→`01g`.
+- `00-INDICE-GERAL.md` reagrupado nas subseções 01a–01k.
+- Conteúdo clínico **não mudou** — o ciclo de auditoria segue `Revisar até 08/2027`.
+- Detalhe completo e fila de trabalho em `PLANOS-FUTUROS.md`.
+
 ---
-**Revisado em 08/2026 · Revisão clínica completa em 09/2026 · Revisar até 08/2027**
+**Versão 2.0 · Revisado em 08/2026 · Revisão clínica completa em 09/2026 · Revisar até 08/2027**
 
 ## ESTADO FINAL (2026-09-09)
 

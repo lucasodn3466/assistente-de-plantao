@@ -210,7 +210,7 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 **Estrutura**
 - [x] Migrar a biblioteca para pastas de um nível — branch `restruturacao-pastas`
 - [x] Atualizar `00-INDICE-GERAL.md` e os links internos
-- [ ] Bump de versão quando a reestruturação fechar (hoje: 1.0)
+- [x] Bump de versão para 2.0 (Setembro de 2026)
 
 **Decisões em aberto**
 - [ ] Nome: 01h Infectologia grave × 05 Infectologia
