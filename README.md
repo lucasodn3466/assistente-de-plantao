@@ -29,6 +29,7 @@ O que vem a seguir está em [`PLANOS-FUTUROS.md`](biblioteca-plantao/PLANOS-FUTU
 - **`main` é a branch canônica.**
 - **Fechar o Obsidian antes de mover arquivos.** Ele reescreve links ao mover; o vault usa links relativos de propósito.
 - **Backup byte-idêntico** parado em `Downloads/Assistente de Plantão Hierarquizado/`.
-- **Um nível de pastas**, e todo arquivo mantém o prefixo completo no nome — nenhum basename se repete.
+- **Um nível de pastas.** Nome do arquivo = código da pasta + `__` + número + tema (`01h__01-sepse-choque-septico.md`). O código curto só existe numa pasta, então nenhum basename se repete.
+- **Links relativos.** Topo de cada protocolo: `../00-INDICE-GERAL.md`. Entre seções: `../pasta/arquivo.md`.
 
 </details>

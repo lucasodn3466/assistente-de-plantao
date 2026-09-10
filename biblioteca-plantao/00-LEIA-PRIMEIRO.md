@@ -59,7 +59,7 @@ As diretrizes citadas são as **edições vigentes verificáveis até o início 
 
 ## 🛠️ MANUTENÇÃO
 
-Novo protocolo: copie o esqueleto de `99-TEMPLATES.md`, nomeie `NN-area__NN-tema.md` (minúsculas, sem acento, hífens), preencha os 13 blocos e o rodapé. Revisão: confira os rodapés a cada semestre. Funciona em Obsidian, Logseq, Drive, ou numa pasta no celular — Markdown puro, sem dependências.
+Novo protocolo: copie o esqueleto de `99-TEMPLATES.md`, nomeie `CCc__NN-tema.md` (código da pasta + `__` + número + tema; minúsculas, sem acento, hífens), salve na pasta da seção, preencha os 13 blocos e o rodapé. Revisão: confira os rodapés a cada semestre. Funciona em Obsidian, Logseq, Drive, ou numa pasta no celular — Markdown puro, sem dependências.
 
 ---
 **Versão 1.0 · Revisado em 08/2026 · Revisar até 08/2027**

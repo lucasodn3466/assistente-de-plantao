@@ -2,14 +2,14 @@
 
 # 📐 TEMPLATES — para criar novos arquivos
 
-Três esqueletos. Copie o que corresponde ao tipo de arquivo, nomeie `NN-area__NN-tema.md` (minúsculas, sem acento, hífens) e preencha. Regras transversais: primeira linha `[← Índice geral](00-INDICE-GERAL.md)` · links relativos no mesmo diretório · doses com apresentação brasileira · infusões tituláveis prescritas em BIC (droga, dose total, diluente, volume final, concentração, dose inicial, mL/h, alvo, monitorização) · nada de serviço específico no corpo (isso é da camada local) · rodapé obrigatório.
+Três esqueletos. Copie o que corresponde ao tipo de arquivo, nomeie `CCc__NN-tema.md` (código da pasta + `__` + número com zero à esquerda + tema; minúsculas, sem acento, hífens), salve na pasta da seção e preencha. Regras transversais: primeira linha `[← Índice geral](../00-INDICE-GERAL.md)` · links entre seções são relativos (`../pasta/arquivo.md`) · doses com apresentação brasileira · infusões tituláveis prescritas em BIC (droga, dose total, diluente, volume final, concentração, dose inicial, mL/h, alvo, monitorização) · nada de serviço específico no corpo (isso é da camada local) · rodapé obrigatório.
 
 ---
 
 ## ESQUELETO A — PROTOCOLO DE DOENÇA
 
 ```markdown
-[← Índice geral](00-INDICE-GERAL.md)
+[← Índice geral](../00-INDICE-GERAL.md)
 
 # <EMOJI> <NOME>
 
@@ -39,7 +39,7 @@ Três esqueletos. Copie o que corresponde ao tipo de arquivo, nomeie `NN-area__N
 ## ESQUELETO B — ROTEADOR SINDRÔMICO (fino, sem tratamento, sem doses)
 
 ```markdown
-[← Índice geral](00-INDICE-GERAL.md)
+[← Índice geral](../00-INDICE-GERAL.md)
 
 # 🚪 <QUEIXA> — ABORDAGEM SINDRÔMICA
 
@@ -57,7 +57,7 @@ Três esqueletos. Copie o que corresponde ao tipo de arquivo, nomeie `NN-area__N
 ## ESQUELETO C — PROCEDIMENTO (o leitor pode nunca ter feito)
 
 ```markdown
-[← Índice geral](00-INDICE-GERAL.md)
+[← Índice geral](../00-INDICE-GERAL.md)
 
 # 🛠️ <PROCEDIMENTO>
 

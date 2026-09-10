@@ -12,7 +12,7 @@ Documento para rastrear ideias de evolução, novos protocolos, melhorias e rees
 
 > Estrutura-alvo fechada em 10/09/2026. **Documento de planejamento — não colar em `00-INDICE-GERAL.md`.** O índice geral só muda quando os arquivos forem de fato criados e movidos.
 
-### 📁 Estrutura de pastas — DECIDIDO em 10/09/2026
+### 📁 Estrutura de pastas — DECIDIDO E EXECUTADO em 10/09/2026 (branch `restruturacao-pastas`)
 
 A biblioteca **deixa de ser flat**. Motivo: com ~130 arquivos e uma seção 01 de ~57, a lista plana vira parede — pior de acessar no plantão, que é exatamente o que a estrutura deveria facilitar.
 
@@ -44,10 +44,10 @@ biblioteca-plantao/
   06-ortopedia/              5
   07-oftalmo-orl/            2
   08-dermatologia/           2
-  09-dor-cronica/            3
+  09-dor-cronica-queixas-recorrentes/   3
   10-psiquiatria-urgencia/   3
   11-paciente-retido/        2
-  12-queixa-vaga/            2
+  12-queixa-vaga-simulacao/  2
   13-regulacao/              1
   14-farmacologia-plantao/   1
   15-scores-calculadoras/    1
@@ -56,8 +56,8 @@ biblioteca-plantao/
 
 **Regras que continuam valendo:**
 - **Um nível só.** Nada de subpasta dentro de subpasta.
-- **O prefixo completo continua no nome do arquivo** (`01a-cardiologia__03-iam-com-supra.md`). Nomes seguem globalmente únicos, mesmo dentro de pastas. Isso mata por construção o risco de basename duplicado que já quebrou os links relativos deste vault uma vez.
-- **Links relativos.** Após a migração, o link do topo vira `../00-INDICE-GERAL.md` e os cruzados viram `../01a-cardiologia/....md`. A reescrita é um passo scriptado, não manual.
+- **Nome do arquivo = código da pasta + `__` + número + tema** (`01h__01-sepse-choque-septico.md`), com o número em dois dígitos. O código curto (`01h`, `05`, `16`) existe em uma única pasta, então os basenames seguem globalmente únicos — isso mata por construção o risco de basename duplicado que já quebrou os links relativos deste vault uma vez.
+- **Links relativos.** O link do topo de cada protocolo é `../00-INDICE-GERAL.md`; os cruzados entre seções são `../pasta/arquivo.md`; no mesmo diretório, só o nome. A reescrita foi scriptada, não manual.
 - **Fechar o Obsidian antes de mover.** Com `alwaysUpdateLinks: true` ele reescreve links sozinho durante a movimentação e briga com o script.
 
 | Seção | Nome | Hoje | Alvo | Mudança |
@@ -161,16 +161,16 @@ biblioteca-plantao/
 
 | Item | Escopo | Status | Notas |
 |------|--------|--------|-------|
-| **Migrar de flat para pastas de um nível** | Toda a biblioteca | ⏳ planejado | ✅ Formato decidido em 10/09/2026 — ver [Estrutura de pastas](#-estrutura-de-pastas--decidido-em-10092026). Fechar o Obsidian antes; reescrever links por script; commitar em branch própria |
-| Subdividir Emergências clínicas em 11 subseções | Seção 01 | ⏳ planejado | De 15 para ~57 arquivos. Vira 11 pastas de primeiro nível, `01a-` a `01k-` |
-| Criar seção 05 · Infectologia | Nova seção | ⏳ planejado | Número reaproveitado da psiquiatria. Estrutura interna sindrômica em aberto |
-| Mover Psiquiatria de urgência de 05 para 10 | 3 arquivos | ⏳ planejado | Depois que abstinência/intoxicações sair para 01g |
-| Absorver Acidentes peçonhentos (10) em 01g Toxicologia | 4 arquivos | ⏳ planejado | Ofídico, escorpiônico, aranhas, mordeduras/raiva/tétano. É o que libera o número 10 |
-| Migrar ATB empírico por foco de 14 para 05 | 1 arquivo | ⏳ planejado | `14-farmacologia-plantao__02-antibioticos-empiricos-por-foco.md`. Deixa a 14 só com vasoativas, sedação e analgesia |
-| Mover crise falcêmica de 09 para 01j | 1 arquivo | ⏳ planejado | Deixa a 09 com 3 arquivos |
-| Mover abstinência alcoólica e intoxicações de 05 para 01g | 1 arquivo | ⏳ planejado | |
+| **Migrar de flat para pastas de um nível** | Toda a biblioteca | 🟢 feito | 82 arquivos → 25 pastas na branch `restruturacao-pastas`, esquema D. 1235 links verificados, 0 quebrados |
+| Subdividir Emergências clínicas em subseções | Seção 01 | 🟢 feito | Os 15 arquivos atuais foram para 01a/01b/01c/01d/01g/01h/01i/01j/01k. 01e Gastro-Hepato e 01f Nefrologia nascem com o primeiro arquivo |
+| Criar seção 05 · Infectologia | Nova seção | 🟢 feito | Pasta criada com o ATB empírico. Estrutura interna sindrômica ainda em aberto |
+| Mover Psiquiatria de urgência de 05 para 10 | 3 arquivos | 🟢 feito | |
+| Absorver Acidentes peçonhentos (10) em 01g Toxicologia | 4 arquivos | 🟢 feito | Ficaram em 01g__08 a 01g__11; 01g__02 a 01g__07 reservados para as intoxicações planejadas |
+| Migrar ATB empírico por foco de 14 para 05 | 1 arquivo | 🟢 feito | Virou `05__01-antibioticos-empiricos-por-foco.md`. A 14 ficou só com vasoativas/sedação/analgesia |
+| Mover crise falcêmica de 09 para 01j | 1 arquivo | 🟢 feito | A 09 ficou com 3 arquivos |
+| Mover abstinência alcoólica e intoxicações de 05 para 01g | 1 arquivo | 🟢 feito | Virou `01g__01` |
 | Criar seção Semiologia | Nova seção | ⏳ planejado | Local dentro do índice em aberto; não necessariamente na porta sindrômica |
-| Atualizar índice geral e links internos | Toda a biblioteca | ⏳ planejado | Executar ao final de cada movimentação |
+| Atualizar índice geral e links internos | Toda a biblioteca | 🟢 feito | `00-INDICE-GERAL.md` reagrupado nas subseções novas; todos os links relativos reescritos e verificados |
 
 ---
 
@@ -208,8 +208,8 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 > Só o que vem a seguir. A fila completa está nas tabelas acima.
 
 **Estrutura**
-- [ ] Migrar a biblioteca para pastas de um nível
-- [ ] Atualizar `00-INDICE-GERAL.md` e os links internos depois da migração
+- [x] Migrar a biblioteca para pastas de um nível — branch `restruturacao-pastas`
+- [x] Atualizar `00-INDICE-GERAL.md` e os links internos
 - [ ] Bump de versão quando a reestruturação fechar (hoje: 1.0)
 
 **Decisões em aberto**
@@ -233,7 +233,8 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 | Data | Item | Status anterior | Status novo | Responsável |
 |------|------|-----------------|-------------|-------------|
 | 2026-09-10 | Índice projetado e plano de reestruturação | — | ⏳ planejado | Lucas |
-| 2026-09-10 | Estrutura de pastas (flat → um nível) | em aberto | ✅ decidido | Lucas |
+| 2026-09-10 | Estrutura de pastas (flat → um nível, esquema D) | em aberto | ✅ decidido | Lucas |
+| 2026-09-10 | Migração executada: 82 arquivos → 25 pastas, índice reagrupado, 1235 links OK | ⏳ planejado | 🟢 feito na branch `restruturacao-pastas` | Claude + Lucas |
 
 ---
 
