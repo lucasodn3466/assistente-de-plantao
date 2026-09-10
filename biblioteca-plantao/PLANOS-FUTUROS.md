@@ -12,6 +12,54 @@ Documento para rastrear ideias de evolução, novos protocolos, melhorias e rees
 
 > Estrutura-alvo fechada em 10/09/2026. **Documento de planejamento — não colar em `00-INDICE-GERAL.md`.** O índice geral só muda quando os arquivos forem de fato criados e movidos.
 
+### 📁 Estrutura de pastas — DECIDIDO em 10/09/2026
+
+A biblioteca **deixa de ser flat**. Motivo: com ~130 arquivos e uma seção 01 de ~57, a lista plana vira parede — pior de acessar no plantão, que é exatamente o que a estrutura deveria facilitar.
+
+**Formato escolhido: um nível de pastas, sem aninhamento.** As 11 subseções de Emergências Clínicas viram pastas de primeiro nível (`01a-cardiologia/` … `01k-medicina-intensiva/`), não subpastas de uma pasta `01`. A ordenação alfabética mantém 01a–01k adjacentes, então a seção continua se lendo como um bloco.
+
+```
+biblioteca-plantao/
+  00-INDICE-GERAL.md          ← arquivos de apoio ficam na raiz
+  00-LEIA-PRIMEIRO.md
+  99-TEMPLATES.md
+  CHANGELOG-MERGE.md
+  PLANOS-FUTUROS.md
+  00-sindromico/            13
+  01a-cardiologia/          11
+  01b-pneumologia/           4
+  01c-neurologia/            2
+  01d-endocrinologia/        3
+  01e-gastro-hepatologia/    5
+  01f-nefrologia/            8
+  01g-toxicologia/          11
+  01h-infectologia-grave/    3
+  01i-alergologia/           2
+  01j-hematologia/           4
+  01k-medicina-intensiva/    4
+  02-cirurgia-trauma/        7
+  03-go-obstetricia/         7
+  04-pediatria/              4
+  05-infectologia/          11
+  06-ortopedia/              5
+  07-oftalmo-orl/            2
+  08-dermatologia/           2
+  09-dor-cronica/            3
+  10-psiquiatria-urgencia/   3
+  11-paciente-retido/        2
+  12-queixa-vaga/            2
+  13-regulacao/              1
+  14-farmacologia-plantao/   1
+  15-scores-calculadoras/    1
+  16-procedimentos/          8
+```
+
+**Regras que continuam valendo:**
+- **Um nível só.** Nada de subpasta dentro de subpasta.
+- **O prefixo completo continua no nome do arquivo** (`01a-cardiologia__03-iam-com-supra.md`). Nomes seguem globalmente únicos, mesmo dentro de pastas. Isso mata por construção o risco de basename duplicado que já quebrou os links relativos deste vault uma vez.
+- **Links relativos.** Após a migração, o link do topo vira `../00-INDICE-GERAL.md` e os cruzados viram `../01a-cardiologia/....md`. A reescrita é um passo scriptado, não manual.
+- **Fechar o Obsidian antes de mover.** Com `alwaysUpdateLinks: true` ele reescreve links sozinho durante a movimentação e briga com o script.
+
 | Seção | Nome | Hoje | Alvo | Mudança |
 |---|---|---|---|---|
 | 00 | Porta sindrômica | 13 | 13 | sem mudança |
@@ -113,7 +161,8 @@ Documento para rastrear ideias de evolução, novos protocolos, melhorias e rees
 
 | Item | Escopo | Status | Notas |
 |------|--------|--------|-------|
-| Subdividir Emergências clínicas em 11 subseções | Seção 01 | ⏳ planejado | De 15 para ~57 arquivos. Nomenclatura dos arquivos ainda a definir |
+| **Migrar de flat para pastas de um nível** | Toda a biblioteca | ⏳ planejado | ✅ Formato decidido em 10/09/2026 — ver [Estrutura de pastas](#-estrutura-de-pastas--decidido-em-10092026). Fechar o Obsidian antes; reescrever links por script; commitar em branch própria |
+| Subdividir Emergências clínicas em 11 subseções | Seção 01 | ⏳ planejado | De 15 para ~57 arquivos. Vira 11 pastas de primeiro nível, `01a-` a `01k-` |
 | Criar seção 05 · Infectologia | Nova seção | ⏳ planejado | Número reaproveitado da psiquiatria. Estrutura interna sindrômica em aberto |
 | Mover Psiquiatria de urgência de 05 para 10 | 3 arquivos | ⏳ planejado | Depois que abstinência/intoxicações sair para 01g |
 | Absorver Acidentes peçonhentos (10) em 01g Toxicologia | 4 arquivos | ⏳ planejado | Ofídico, escorpiônico, aranhas, mordeduras/raiva/tétano. É o que libera o número 10 |
@@ -159,6 +208,7 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 | Data | Item | Status anterior | Status novo | Responsável |
 |------|------|-----------------|-------------|-------------|
 | 2026-09-10 | Índice projetado e plano de reestruturação | — | ⏳ planejado | Lucas |
+| 2026-09-10 | Estrutura de pastas (flat → um nível) | em aberto | ✅ decidido | Lucas |
 
 ---
 
