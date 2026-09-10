@@ -203,6 +203,31 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 
 ---
 
+## ✅ PRÓXIMAS TAREFAS
+
+> Só o que vem a seguir. A fila completa está nas tabelas acima.
+
+**Estrutura**
+- [ ] Migrar a biblioteca para pastas de um nível
+- [ ] Atualizar `00-INDICE-GERAL.md` e os links internos depois da migração
+- [ ] Bump de versão quando a reestruturação fechar (hoje: 1.0)
+
+**Decisões em aberto**
+- [ ] Nome: 01h Infectologia grave × 05 Infectologia
+- [ ] Estrutura interna da seção 05
+- [ ] Onde entra Semiologia
+- [ ] Dividir a biblioteca em duas?
+
+**Escrita — primeiros da fila**
+- [ ] 01f Nefrologia — distúrbios do sódio, distúrbios do potássio + ECG
+- [ ] 01e Gastro/Hepatologia — encefalopatia hepática, PBE
+- [ ] 16 Procedimentos — paracentese, junto com ascite/cirrose
+
+**Camada local**
+- [ ] Instanciar o primeiro perfil de serviço em `locais/`
+
+---
+
 ## 🔄 HISTÓRICO DE MUDANÇAS
 
 | Data | Item | Status anterior | Status novo | Responsável |
