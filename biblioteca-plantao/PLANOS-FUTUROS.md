@@ -8,20 +8,104 @@ Documento para rastrear ideias de evolução, novos protocolos, melhorias e rees
 
 ---
 
+## 🗺️ ÍNDICE PROJETADO (alvo)
+
+> Estrutura-alvo fechada em 10/09/2026. **Documento de planejamento — não colar em `00-INDICE-GERAL.md`.** O índice geral só muda quando os arquivos forem de fato criados e movidos.
+
+| Seção | Nome | Hoje | Alvo | Mudança |
+|---|---|---|---|---|
+| 00 | Porta sindrômica | 13 | 13 | sem mudança |
+| — | **Semiologia** | — | a definir | seção nova; local no índice ainda em aberto |
+| 01 | Emergências clínicas | 15 | ~57 | subdividida em 11 subseções (01a–01k) |
+| 02 | Cirurgia e trauma | 7 | 7 | sem mudança |
+| 03 | GO e obstetrícia | 7 | 7 | sem mudança |
+| 04 | Pediatria | 4 | 4 | sem mudança |
+| 05 | **Infectologia** | — | 11 | seção nova; número reaproveitado (era psiquiatria) |
+| 06 | Ortopedia | 5 | 5 | sem mudança |
+| 07 | Oftalmo e ORL | 2 | 2 | sem mudança |
+| 08 | Dermatologia | 2 | 2 | sem mudança |
+| 09 | Dor crônica e queixas recorrentes | 4 | 3 | perde crise falcêmica para 01j |
+| 10 | Psiquiatria de urgência | 4 (hoje em 05) | 3 | movida de 05; perde abstinência/intoxicações para 01g |
+| ~~10~~ | ~~Acidentes peçonhentos~~ | 4 | — | absorvida por 01g; é o que libera o número 10 |
+| 11 | Paciente retido | 2 | 2 | sem mudança |
+| 12 | Queixa vaga e documentação | 2 | 2 | sem mudança |
+| 13 | Regulação | 1 | 1 | sem mudança |
+| 14 | Farmacologia de plantão | 2 | 1 | perde ATB empírico por foco para 05 |
+| 15 | Scores e calculadoras | 1 | 1 | sem mudança |
+| 16 | Procedimentos | 7 | 8 | + paracentese |
+
+### Seção 01 — subseções
+
+| Sub | Nome | Conteúdo | Qtd |
+|---|---|---|---|
+| 01a | Cardiologia | IAM com supra, SCA sem supra, taquiarritmias, bradiarritmias, crise hipertensiva, EAP/IC descompensada, tamponamento cardíaco, miocardite, pericardite, síndrome aórtica aguda, QT longo | 11 |
+| 01b | Pneumologia | asma/DPOC, TEP, derrame pleural, PAC | 4 |
+| 01c | Neurologia | AVC agudo, crise convulsiva/EME | 2 |
+| 01d | Endocrinologia | CAD/EHH/hipoglicemia, crise tireotóxica/coma mixedematoso, insuficiência adrenal aguda | 3 |
+| 01e | Gastro/Hepatologia | encefalopatia hepática, PBE, ascite/cirrose, síndrome hepatorrenal, hepatite alcoólica | 5 |
+| 01f | Nefrologia | LRA, rabdomiólise, sódio, potássio + ECG, cálcio, magnésio, fósforo, ácido-base | 8 |
+| 01g | Toxicologia | abstinência alcoólica/intoxicações, paracetamol, tricíclicos, lítio, carbamazepina, organofosforados, digitálicos, ofídico, escorpiônico, aranhas, mordeduras/raiva/tétano | 11 |
+| 01h | Infectologia grave | sepse/choque séptico, meningite aguda, encefalite viral | 3 |
+| 01i | Alergologia | anafilaxia, angioedema | 2 |
+| 01j | Hematologia | crise falcêmica, reversão de varfarina, reversão de DOAC, reações transfusionais | 4 |
+| 01k | Medicina intensiva | PCR/ACLS, via aérea/SRI, choque circulatório, ventilação mecânica | 4 |
+
+> Sobreposição entre 01h (sepse) e 01k (choque) é esperada e ok — coesão > pureza taxonômica.
+
+---
+
 ## 📋 NOVOS PROTOCOLOS
 
-| Protocolo | Especialidade | Status | Notas |
-|-----------|---------------|--------|-------|
-| ITU baixa e pielonefrite | Infectologia | ⏳ planejado | Parte da nova aba de infectologia por síndrome |
-| Pneumonia adquirida na comunidade | Infectologia | ⏳ planejado | |
-| Celulite e erisipela | Infectologia | ⏳ planejado | |
-| Faringoamigdalite, sinusite e otite | Infectologia | ⏳ planejado | |
-| Gastroenterite e infecções entéricas | Infectologia | ⏳ planejado | |
-| Infecções sexualmente transmissíveis | Infectologia | ⏳ planejado | Cobrir decisão de tratar e ambulatorial × internar. Não duplicar `14-farmacologia-plantao__02-antibioticos-empiricos-por-foco.md` |
-| Distúrbios hidroeletrolíticos (hipercalemia, hiponatremia, hipocalemia, hipernatremia) | Emergências Clínicas | ⏳ planejado | Hoje fragmentado dentro de PCR e outros protocolos — merece protocolo próprio |
-| Insuficiência renal aguda | Emergências Clínicas | ⏳ planejado | Causas pré e pós-renal, indicação de diálise de urgência |
-| Crise tireotóxica e coma mixedematoso | Emergências Clínicas | ⏳ planejado | |
-| Insuficiência adrenal aguda | Emergências Clínicas | ⏳ planejado | |
+| Protocolo | Destino | Status | Notas |
+|-----------|---------|--------|-------|
+| Tamponamento cardíaco | 01a Cardiologia | ⏳ planejado | |
+| Miocardite | 01a Cardiologia | ⏳ planejado | |
+| Pericardite | 01a Cardiologia | ⏳ planejado | |
+| Síndrome aórtica aguda | 01a Cardiologia | ⏳ planejado | |
+| QT longo | 01a Cardiologia | ⏳ planejado | |
+| Derrame pleural | 01b Pneumologia | ⏳ planejado | |
+| Pneumonia adquirida na comunidade | 01b Pneumologia | ⏳ planejado | Destino mudou: era Infectologia, agora Pneumologia |
+| Crise tireotóxica e coma mixedematoso | 01d Endocrinologia | ⏳ planejado | |
+| Insuficiência adrenal aguda | 01d Endocrinologia | ⏳ planejado | |
+| Encefalopatia hepática | 01e Gastro/Hepatologia | ⏳ planejado | |
+| Peritonite bacteriana espontânea | 01e Gastro/Hepatologia | ⏳ planejado | |
+| Ascite e cirrose descompensada | 01e Gastro/Hepatologia | ⏳ planejado | Escrever junto com paracentese (seção 16) |
+| Síndrome hepatorrenal | 01e Gastro/Hepatologia | ⏳ planejado | |
+| Hepatite alcoólica | 01e Gastro/Hepatologia | ⏳ planejado | |
+| Lesão renal aguda | 01f Nefrologia | ⏳ planejado | Causas pré e pós-renal, indicação de diálise de urgência |
+| Rabdomiólise | 01f Nefrologia | ⏳ planejado | |
+| Distúrbios do sódio | 01f Nefrologia | ⏳ planejado | Hiponatremia e hipernatremia. Hoje fragmentado dentro de outros protocolos |
+| Distúrbios do potássio + ECG | 01f Nefrologia | ⏳ planejado | Hipercalemia e hipocalemia. Hoje fragmentado dentro de PCR |
+| Distúrbios do cálcio | 01f Nefrologia | ⏳ planejado | |
+| Distúrbios do magnésio | 01f Nefrologia | ⏳ planejado | |
+| Distúrbios do fósforo | 01f Nefrologia | ⏳ planejado | |
+| Distúrbios ácido-base | 01f Nefrologia | ⏳ planejado | |
+| Intoxicação por paracetamol | 01g Toxicologia | ⏳ planejado | |
+| Intoxicação por tricíclicos | 01g Toxicologia | ⏳ planejado | |
+| Intoxicação por lítio | 01g Toxicologia | ⏳ planejado | |
+| Intoxicação por carbamazepina | 01g Toxicologia | ⏳ planejado | |
+| Intoxicação por organofosforados | 01g Toxicologia | ⏳ planejado | |
+| Intoxicação digitálica | 01g Toxicologia | ⏳ planejado | |
+| Meningite aguda | 01h Infectologia grave | ⏳ planejado | |
+| Encefalite viral | 01h Infectologia grave | ⏳ planejado | |
+| Angioedema | 01i Alergologia | ⏳ planejado | |
+| Reversão de varfarina | 01j Hematologia | ⏳ planejado | |
+| Reversão de DOAC | 01j Hematologia | ⏳ planejado | |
+| Reações transfusionais | 01j Hematologia | ⏳ planejado | |
+| Choque circulatório | 01k Medicina intensiva | ⏳ planejado | Sobreposição esperada com sepse (01h) |
+| Ventilação mecânica | 01k Medicina intensiva | ⏳ planejado | |
+| ITU baixa e pielonefrite | 05 Infectologia | ⏳ planejado | |
+| Celulite e erisipela | 05 Infectologia | ⏳ planejado | ⚠️ Checar sobreposição com `08-dermatologia__02-infeccoes-pele-partes-moles.md` ao escrever |
+| Faringoamigdalite, sinusite e otite | 05 Infectologia | ⏳ planejado | |
+| Gastroenterite e infecções entéricas | 05 Infectologia | ⏳ planejado | |
+| Infecções sexualmente transmissíveis | 05 Infectologia | ⏳ planejado | Cobrir decisão de tratar e ambulatorial × internar |
+| Arboviroses e febre maculosa | 05 Infectologia | ⏳ planejado | Dengue, chikungunya, zika, febre amarela |
+| Malária e leishmaniose visceral | 05 Infectologia | ⏳ planejado | |
+| Leishmaniose cutânea, hanseníase e paracoccidioidomicose | 05 Infectologia | ⏳ planejado | |
+| Tuberculose | 05 Infectologia | ⏳ planejado | |
+| Doença de Chagas | 05 Infectologia | ⏳ planejado | |
+| Paracentese | 16 Procedimentos | ⏳ planejado | Procedimento próprio no livro de Ribeirão Preto; escrever junto com 01e |
+| Semiologia (conteúdo a definir) | Semiologia | ⏳ planejado | Esqueleto de arquivo e local no índice ainda em aberto |
 
 ---
 
@@ -29,7 +113,24 @@ Documento para rastrear ideias de evolução, novos protocolos, melhorias e rees
 
 | Item | Escopo | Status | Notas |
 |------|--------|--------|-------|
-| | | ⏳ planejado | |
+| Subdividir Emergências clínicas em 11 subseções | Seção 01 | ⏳ planejado | De 15 para ~57 arquivos. Nomenclatura dos arquivos ainda a definir |
+| Criar seção 05 · Infectologia | Nova seção | ⏳ planejado | Número reaproveitado da psiquiatria. Estrutura interna sindrômica em aberto |
+| Mover Psiquiatria de urgência de 05 para 10 | 3 arquivos | ⏳ planejado | Depois que abstinência/intoxicações sair para 01g |
+| Absorver Acidentes peçonhentos (10) em 01g Toxicologia | 4 arquivos | ⏳ planejado | Ofídico, escorpiônico, aranhas, mordeduras/raiva/tétano. É o que libera o número 10 |
+| Migrar ATB empírico por foco de 14 para 05 | 1 arquivo | ⏳ planejado | `14-farmacologia-plantao__02-antibioticos-empiricos-por-foco.md`. Deixa a 14 só com vasoativas, sedação e analgesia |
+| Mover crise falcêmica de 09 para 01j | 1 arquivo | ⏳ planejado | Deixa a 09 com 3 arquivos |
+| Mover abstinência alcoólica e intoxicações de 05 para 01g | 1 arquivo | ⏳ planejado | |
+| Criar seção Semiologia | Nova seção | ⏳ planejado | Local dentro do índice em aberto; não necessariamente na porta sindrômica |
+| Atualizar índice geral e links internos | Toda a biblioteca | ⏳ planejado | Executar ao final de cada movimentação |
+
+---
+
+## ⚠️ DECISÕES EM ABERTO
+
+1. **Nome "Infectologia grave" (01h) × "Infectologia" (05)** — parecidos, conteúdo bem diferente. Talvez renomear um dos dois.
+2. **Estrutura sindrômica interna da seção 05 (Infectologia)** — como agrupar os protocolos ainda não definido.
+3. **Semiologia** — local dentro do índice e esqueleto de arquivo ainda não fechados. Conteúdo listado em conversa anterior.
+4. **Desmembrar a biblioteca em duas** (Emergências × Urgências/Pequenas emergências) — decisão futura, sem ação agora.
 
 ---
 
@@ -47,7 +148,7 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 
 - **Infectologia por síndrome**: nova aba organizada por síndrome infecciosa (não por decisão terapêutica isolada), no mesmo espírito generalista do resto da biblioteca — funciona em qualquer PA, não amarrado a um serviço específico.
 
-- **Guia Prático de Emergências Clínicas** (Unidade de Emergência, HC-FMRP-USP, Ribeirão Preto) — 14 capítulos, 141 subcapítulos. Usar como régua de estrutura para fechar os buracos da seção de Emergências Clínicas. Lucas vai mandar foto do sumário para cruzamento capítulo a capítulo com o índice atual.
+- **Guia Prático de Emergências Clínicas** (Unidade de Emergência, HC-FMRP-USP, Ribeirão Preto) — 14 capítulos, 141 subcapítulos. ✅ **Já consultado (10/09/2026).** Sumário cruzado capítulo a capítulo com o índice atual; o resultado é a estrutura-alvo registrada em [Índice projetado](#️-índice-projetado-alvo), incluindo as 11 subseções de Emergências Clínicas e a paracentese na seção 16.
 
 - **Minor Emergencies** (Buttaravoli, Leffler & Herrington, 4ª edição) — usar como espinha para o futuro módulo de baixa acuidade (fichas verde e amarela). Já organizado por sistema (neurológico e psiquiátrico, oftalmológico, otorrino etc.), cobre ~200 apresentações no formato "o que fazer / o que não fazer" — formato compatível com o estilo enxuto já usado na biblioteca.
 
@@ -57,9 +158,9 @@ Observações gerais, sugestões de colegas, ou melhorias menores que ainda não
 
 | Data | Item | Status anterior | Status novo | Responsável |
 |------|------|-----------------|-------------|-------------|
-| | | | | |
+| 2026-09-10 | Índice projetado e plano de reestruturação | — | ⏳ planejado | Lucas |
 
 ---
 
-**Última atualização:** 2026-09-09  
+**Última atualização:** 2026-09-10  
 **Revisar regularmente** — a cada trimestre ou sempre que novas ideias surjam
